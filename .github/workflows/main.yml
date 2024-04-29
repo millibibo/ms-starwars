@@ -2,11 +2,9 @@ name: Code Quality and Testing
 
 on:
   pull_request:
+    types: [opened, synchronize]
     branches:
-      - master
-  push:
-    branches:
-      - master
+      - main
 
 jobs:
   test:
